@@ -119,6 +119,11 @@ const PostDetails = () => {
     navigate("/home");
   };
 
+  const handleEditComment = (commentId, currentText) => {
+    setEditingCommentId(commentId);
+    setEditText(currentText);
+  };
+
   const handleLikeToggle = async () => {
     try {
       if (liked) {
